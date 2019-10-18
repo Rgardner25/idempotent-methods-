@@ -5,7 +5,7 @@ require 'rspec'
 
 class String
   def username_cleaner
-    upcase.unicode_normalize(:nfkc)
+    unicode_normalize(:nfkc).upcase
   end
 end
 
